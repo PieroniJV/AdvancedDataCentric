@@ -27,8 +27,13 @@ public class ManagerController {
 		Manager m = new Manager("M001", "Tom White");
 		Employee e1 = new Employee("E001", "John Kelly");
 		Employee e2 = new Employee("E002", "Mary Collins");
+		
 		m.getManagedEmployees().add(e1);
 		m.getManagedEmployees().add(e2);
+		
+		e1.setManager(m);
+		e2.setManager(m);
+
 		ms.save(m);
 		return "Added Manager 1";
 	}

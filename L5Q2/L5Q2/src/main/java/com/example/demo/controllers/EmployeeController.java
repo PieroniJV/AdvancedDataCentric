@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.models.Employee;
-import com.example.demo.models.Manager;
+//import com.example.demo.models.Manager;
 import com.example.demo.services.EmployeeService;
 import com.example.demo.services.ManagerService;
 

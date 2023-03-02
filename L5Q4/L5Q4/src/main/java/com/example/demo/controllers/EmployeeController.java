@@ -25,6 +25,7 @@ public class EmployeeController {
 		Employee e = new Employee("E001", "John Kelly");
 		Manager m = new Manager("M001", "Tom White");
 		e.setManager(m);
+		ms.save(m);
 		es.save(e);
 		return "Added Employee 1";
 	}
